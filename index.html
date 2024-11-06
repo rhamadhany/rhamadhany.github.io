@@ -34,7 +34,7 @@
        </a>
       </li>
       <li>
-       <a class="hover:underline" href="about/about">
+       <a class="hover:underline" href="about">
         About
        </a>
       </li>
@@ -42,22 +42,18 @@
     </nav>
    </div>
   </header>
-  <section class="py-12 bg-white dark:bg-gray-800" id="about">
-   <div class="container mx-auto text-center">
-    <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-700">
-     <img alt="Profile picture of Rhamadhany, a Flutter mobile developer" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/d/11jv2skMXGX93V9qawsGx9NRSrbjb6Use=s1000?authuser=0"/>
+  <section class="py-12 bg-gray-100 dark:bg-gray-900" id="about">
+    <div class="container mx-auto flex justify-center">
+        <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 mx-auto max-w-lg">
+            <div class="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-700">
+                <img alt="Profile picture of Rhamadhany, a Flutter mobile developer" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/d/11jv2skMXGX93V9qawsGx9NRSrbjb6Use=s1000?authuser=0"/>
+            </div>
+            <h2 class="text-3xl font-bold mb-2 text-center">Rhamadhany</h2>
+            <p class="text-xl text-center">Flutter Mobile Developer Jr</p>
+            <p class="mt-4 text-center">I am a junior mobile developer focused on developing applications using Flutter. I have experience in building efficient and user-friendly applications.</p>
+        </div>
     </div>
-    <h2 class="text-3xl font-bold mb-2">
-     Rhamadhany
-    </h2>
-    <p class="text-xl">
-     Flutter Mobile Developer Jr
-    </p>
-    <p class="mt-4">
-     I am a junior mobile developer focused on developing applications using Flutter. I have experience in building efficient and user-friendly applications.
-    </p>
-   </div>
-  </section>
+</section>
   <section class="py-12 bg-white dark:bg-gray-800" id="projects">
    <div class="container mx-auto text-center">
     <h2 class="text-3xl font-bold mb-4">
@@ -107,38 +103,7 @@
    </div>
   </section>
   <section class="py-12 bg-white dark:bg-gray-800" id="contact">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">
-     Contact
-    </h2>
-    <p class="mb-4">
-     Feel free to reach out to me via email or follow me on social media.
-    </p>
-    <p class="text-xl mb-4">
-     <i class="fas fa-envelope">
-     </i>
-     <a class="hover:underline" href="mailto:rhamadhanyx1@gmail.com">
-      rhamadhanyx1@gmail.com
-     </a>
-    </p>
-    <div class="flex justify-center space-x-4 mb-8">
-     <a class="text-gray-800 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 flex items-center" href="https://github.com/rhamadhany">
-      <i class="fab fa-github text-2xl">
-      </i>
-      <span class="ml-2">
-       rhamadhany
-      </span>
-     </a>
-     <a class="text-gray-800 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 flex items-center" href="https://linkedin.com/in/rhama-dhany-366ab2335">
-      <i class="fab fa-linkedin text-2xl">
-      </i>
-      <span class="ml-2">
-       rhamadhany
-      </span>
-     </a>
-    </div>
-   </div>
-  </section>
+</section>
   <footer class="bg-blue-600 text-white p-4 text-center dark:bg-blue-800">
    <p>
     ©
@@ -147,11 +112,6 @@
     Rhamadhany. All rights reserved.
    </p>
   </footer>
-  <script>
-   document.getElementById('currentYear').textContent = new Date().getFullYear();
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-        }
-  </script>
+  <script src="assets/js/main.js"></script>
  </body>
 </html>
