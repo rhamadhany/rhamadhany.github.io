@@ -5,14 +5,24 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.classList.add('dark');
         }
-
+        fetch('profile.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('about').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error loading contact content:', error);
+        });
         // Load contact content
-        const script = document.createElement('script');
-        script.src = 'assets/js/contact.js';
-        script.onload = function() {
-            document.getElementById('contact').innerHTML = contactContent;
-        };
-        document.head.appendChild(script);
+        // Fetching from the same origin should work without CORS issues
+        fetch('contact.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('contact').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading contact content:', error);
+            });
     } catch (error) {
         console.error('Error:', error);
     }
