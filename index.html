@@ -1,108 +1,38 @@
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Rhamadhany
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Roboto', sans-serif;
-        }
-  </style>
- </head>
- <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
-  <header class="bg-blue-600 text-white p-4 dark:bg-blue-800">
-   <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold">
-     Rhamadhany
-    </h1>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="hover:underline" href="#projects">
-        Projects
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#contact">
-        Contact
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="about">
-        About
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </div>
-  </header>
-  <section class="py-12 bg-gray-100 dark:bg-gray-900" id="about">
-   
-</section>
-  <section class="py-12 bg-white dark:bg-gray-800" id="projects">
-   <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">
-     Projects
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-     <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-      <div class="overflow-hidden">
-       <img alt="Screenshot of Movin Player, a mobile application developed using Flutter" class="w-full h-auto object-contain rounded-t-lg" style="max-height: 200px;" src="https://lh3.googleusercontent.com/d/1Br7SJIym0B9yrbKykNYyjqfSMwKDQg_0=s1000?authuser=0"/>
-      </div>
-      <h3 class="font-bold mt-4">
-       <a class="text-blue-600 hover:underline dark:text-blue-400" href="https://play.google.com/store/apps/details?id=com.BNeoTech.MovinPlayer" target="_blank">
-        Movin Player
-       </a>
-      </h3>
-      <p class="mt-2">
-       Movin Player is a versatile video and audio player application developed using Flutter. It provides a comprehensive and flexible viewing experience, allowing users to search and play videos and audios from various sources easily.
-      </p>
-     </div>
-     <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-      <div class="overflow-hidden">
-       <img alt="Screenshot of Media Compression, a mobile application developed using Flutter" class="w-full h-auto object-contain rounded-t-lg" style="max-height: 200px;" src="https://lh3.googleusercontent.com/d/1oi3qw4C4Ha0MuTsQrMsXLyZjWL0We0_8=s1000?authuser=0"/>
-      </div>
-      <h3 class="font-bold mt-4">
-       <a class="text-blue-600 hover:underline dark:text-blue-400" href="https://play.google.com/store/apps/details?id=com.BNeoTech.compressiontools" target="_blank">
-        Media Compression
-       </a>
-      </h3>
-      <p class="mt-2">
-       Media Compression is an application developed using Flutter designed to simplify the process of compressing various types of media such as PDFs, photos, audio, and videos. It offers a user-friendly interface and efficient compression algorithms to save storage space.
-      </p>
-     </div>
-     <div class="bg-gray-200 dark:bg-gray-700 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-      <div class="overflow-hidden">
-       <img alt="Screenshot of Disk Cleaner, a mobile application developed using Flutter" class="w-full h-auto object-contain rounded-t-lg" style="max-height: 200px;" src="https://lh3.googleusercontent.com/d/1TmvVlKiidiGFhpYGAT7jBxjJL061jlr3=s1000?authuser=0"/>
-      </div>
-      <h3 class="font-bold mt-4">
-       <a class="text-blue-600 hover:underline dark:text-blue-400" href="https://play.google.com/store/apps/details?id=com.BNeoTech.diskcleaner" target="_blank">
-        Disk Cleaner
-       </a>
-      </h3>
-      <p class="mt-2">
-       Disk Cleaner is an application developed using Flutter to clean up digital junk on your device, ensuring it stays optimized and organized. The app offers a variety of scanning features that can detect and delete unnecessary files such as audio, video, photos, text, archives, PDFs, empty files, and empty folders.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="py-12 bg-white dark:bg-gray-800" id="contact">
-</section>
-  <footer class="bg-blue-600 text-white p-4 text-center dark:bg-blue-800">
-   <p>
-    ©
-    <span id="currentYear">
-    </span>
-    Rhamadhany. All rights reserved.
-   </p>
-  </footer>
-  <script src="assets/js/main.js"></script>
- </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="portofolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>rhamadhany</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
 </html>
